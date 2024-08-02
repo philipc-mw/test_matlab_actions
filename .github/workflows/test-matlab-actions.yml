@@ -1,0 +1,11 @@
+name: MATLAB actions test
+on:
+  workflow_dispatch:
+jobs:
+  test-matlab-actions:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Set up MATLAB
+        uses: matlab-actions/setup-matlab@v2
+        with:
+          products: MATLAB
